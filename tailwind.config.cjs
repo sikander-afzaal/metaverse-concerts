@@ -13,6 +13,7 @@ module.exports = {
         gray: "#333",
         red: "#e50914",
         hoverRed: "#f40612",
+        faqGray: "#303030",
       },
       fontFamily: {
         sans: ["Netflix-Sans", ...defaultTheme.fontFamily.sans],
