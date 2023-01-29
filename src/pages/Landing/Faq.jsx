@@ -9,20 +9,20 @@ const Faq = () => {
           Frequently Asked Questions
         </h2>
         <FaqTab
-          question="What is Netflix?"
-          answer="Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices."
+          question="What is Metflix?"
+          answer="Metflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices."
         />
         <FaqTab
-          question="What is Netflix?"
-          answer="Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices."
+          question="What is Metflix?"
+          answer="Metflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices."
         />
         <FaqTab
-          question="What is Netflix?"
-          answer="Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices."
+          question="What is Metflix?"
+          answer="Metflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices."
         />
         <FaqTab
-          question="What is Netflix?"
-          answer="Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices."
+          question="What is Metflix?"
+          answer="Metflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices."
         />
       </div>
       <GetStarted />

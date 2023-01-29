@@ -97,7 +97,7 @@ const Footer = () => {
               href="#"
               className="text-[#737373] text-sm hover:underline"
             >
-              Only on Netflix
+              Only on Metflix
             </a>
           </div>
           <div className="flex justify-start items-start flex-col gap-3">
@@ -127,11 +127,11 @@ const Footer = () => {
               href="#"
               className="text-[#737373] text-sm hover:underline"
             >
-              Only on Netflix
+              Only on Metflix
             </a>
           </div>
         </div>
-        <p className="text-[#737373] text-base hover:underline">Netflix</p>
+        <p className="text-[#737373] text-base hover:underline">Metflix</p>
       </footer>
     </div>
   );
