@@ -3,25 +3,27 @@ const Features = () => {
     <div className="w-full flex justify-center items-center flex-col gap-3">
       <FeatureRow
         img="/feature-img.png"
-        title="Enjoy on your TV."
-        desc="Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more."
+        title="BE ENTERTAINED"
+        desc=" Famous artists, hilarious stand-up comedy and electrifying concerts , Checkout out what’s coming up soon"
+        btn
       />
       <FeatureRow
         img="/feature-img.png"
-        title="Download your shows to watch offline."
-        desc="Save your favorites easily and always have something to watch."
+        title="WATCH ANYWHERE"
+        desc="Stream unlimited entertainment to your phone, tablet, laptop, and TV."
         order
       />
       <FeatureRow
         // img="/feature-img.png"
-        title="Watch everywhere."
-        desc="Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV."
+        btn
+        title="METFLIX MARKETPLACE"
+        desc="Buy, sell or trade tickets / shows and show memorabilia Via our Pier to Pier marketplace trading"
       />
       <FeatureRow
         order
         img="/feature-img.png"
-        title="Create profiles for kids."
-        desc="Send kids on adventures with their favorite characters in a space made just for them—free with your membership."
+        title="A FULLY IMMERSIVE FUTURE"
+        desc="As technology continues to advance, there will be an increasing demand for novel experiences. In response to this trend, Metflix is embracing the challenge by premiering content within the metaverse, a virtual reality space where users can interact and engage with various forms of entertainment. This includes world premieres from artists in various genres, such as music, comedy, and dance, among others. The utilisation of the metaverse as a platform for premiering content allows for a unique and immersive experience for the audience, catering to the growing need for new and exciting forms of entertainment."
       />
     </div>
   );
@@ -29,7 +31,7 @@ const Features = () => {
 
 export default Features;
 
-const FeatureRow = ({ img, title, desc, order }) => {
+const FeatureRow = ({ img, title, desc, order, btn }) => {
   return (
     <div className="flex justify-center border-b-8 border-solid border-[#222] py-[70px] px-5 items-center w-full">
       <div
@@ -40,12 +42,17 @@ const FeatureRow = ({ img, title, desc, order }) => {
         <div
           className={`flex justify-start items-center text-center lg:text-left lg:items-start flex-col gap-4`}
         >
-          <h4 className="text-white text-[1.625rem] sm:text-[2.5rem] lg:text-[3.125rem] font-medium leading-[1.1]">
+          <h4 className="text-white text-[1.625rem] sm:text-[2.5rem] lg:text-[2.4rem] font-medium leading-[1.1]">
             {title}
           </h4>
-          <p className="text-white font-normal text-[1.125rem] sm:text-[1.25rem] lg:text-[1.625rem]">
+          <p className="text-white font-normal text-[1.125rem] sm:text-[1.25rem] lg:text-[1.3rem] leading-[1.4]">
             {desc}
           </p>
+          {btn && (
+            <button className="px-5 sm:min-w-[200px] flex justify-center items-center gap-1 rounded-md sm:gap-3 bg-btnBg  border-none cursor-pointer text-black h-full text-[1.1rem] min-h-[50px] sm:text-[1.3rem]">
+              Learn More
+            </button>
+          )}
         </div>
         <img src={img} className="w-full max-w-[530px] object-contain" alt="" />
       </div>

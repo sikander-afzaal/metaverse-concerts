@@ -9,7 +9,7 @@ const Hero = () => {
       </div>
       <div className="flex justify-center items-center flex-col gap-6 max-w-[950px] px-5 w-full">
         <h2 className="text-[2rem] sm:text-[4rem] leading-[1.1] text-center text-white font-medium max-w-[800px]">
-          Unlimited movies, TV shows, and more.
+          Experience the ultimate in metaverse entertainment
         </h2>
         <h3 className="text-[1.2rem] sm:text-[1.625rem] text-white font-normal max-w-[800px]">
           Watch anywhere. Cancel anytime.

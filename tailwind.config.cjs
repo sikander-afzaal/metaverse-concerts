@@ -6,6 +6,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
+        btnBg:
+          "linear-gradient(163deg, rgba(220,246,253,1) 0%, rgba(230,240,250,1) 36%, rgba(251,218,241,1) 60%, rgba(166,129,244,1) 92%)",
         overlayHero:
           "linear-gradient(0deg,rgba(0,0,0,.8) 0,transparent 60%,rgba(0,0,0,.8))",
       },
