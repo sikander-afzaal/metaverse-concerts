@@ -17,7 +17,7 @@ const Features = () => {
         order
       />
       <FeatureRow
-        // img="/feature-img.png"
+        img="/feature-img.png"
         btn
         title="METFLIX MARKETPLACE"
         desc="Buy, sell or trade tickets / shows and show memorabilia Via our Pier to Pier marketplace trading"
