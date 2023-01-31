@@ -1,4 +1,5 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
+import { useIntersectionObserver } from "react-intersection-observer-hook";
 
 const Features = () => {
   return (
@@ -34,25 +35,16 @@ const Features = () => {
 export default Features;
 
 const FeatureRow = ({ video, title, desc, order, btn }) => {
-  // const videoRef = useRef();
-  // const [paused, setPaused] = useState(true);
-  // const scrollFunc = () => {
-  //   const vidFromTop = videoRef.current.getBoundingClientRect().top;
-  //   if (window.pageYOffset - vidFromTop > -window.innerHeight / 2) {
-  //     videoRef.current.play();
-  //     setPaused(false);
-  //   } else return;
-  // };
-  // useEffect(() => {
-  //   videoRef.current.pause();
-  //   window.addEventListener("scroll", scrollFunc);
-  // }, []);
-  // useEffect(() => {
-  //   if (!paused) {
-  //     window.removeEventListener("scroll", scrollFunc());
-  //   }
-  // }, [paused]);
-
+  const [paused, setPaused] = useState(true);
+  const [ref, { entry }] = useIntersectionObserver();
+  const isVisible = entry && entry.isIntersecting && paused;
+  useEffect(() => {
+    if (isVisible) {
+      setPaused(false);
+      const elem = document.querySelector(`#${title.split(" ")[0]}`);
+      elem.play();
+    }
+  }, [isVisible]);
   return (
     <div className="flex justify-center border-b-8 border-solid border-[#222] py-[70px] px-5 items-center w-full">
       <div
@@ -76,9 +68,10 @@ const FeatureRow = ({ video, title, desc, order, btn }) => {
           )}
         </div>
         <video
-          // ref={videoRef}
-          loop
-          autoPlay
+          ref={ref}
+          id={title.split(" ")[0]}
+          // loop
+          // autoPlay
           src={video}
           className="w-full sm:min-w-[530px] max-w-[530px] object-contain"
           playsInline
