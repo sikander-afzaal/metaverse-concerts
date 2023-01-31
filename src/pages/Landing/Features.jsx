@@ -67,17 +67,19 @@ const FeatureRow = ({ video, title, desc, order, btn }) => {
             </button>
           )}
         </div>
-        <video
-          ref={ref}
-          id={title.split(" ")[0]}
-          // loop
-          // autoPlay
-          src={video}
-          className="w-full sm:min-w-[530px] max-w-[530px] object-contain"
-          playsInline
-          muted
-          alt=""
-        />
+        {video && (
+          <video
+            ref={ref}
+            id={title.split(" ")[0]}
+            // loop
+            // autoPlay
+            src={video}
+            className="w-full sm:min-w-[530px] max-w-[530px] object-contain"
+            playsInline
+            muted
+            alt=""
+          />
+        )}
       </div>
     </div>
   );
