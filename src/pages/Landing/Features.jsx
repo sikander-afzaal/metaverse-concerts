@@ -11,20 +11,20 @@ const Features = () => {
         btn
       />
       <FeatureRow
-        img="/feature-img.png"
+        img="/feature-img2.png"
         title="WATCH ANYWHERE"
         desc="Stream unlimited entertainment to your phone, tablet, laptop, and TV."
         order
       />
       <FeatureRow
-        img="/feature-img.png"
+        img="/feature-img3.png"
         btn
         title="METFLIX MARKETPLACE"
         desc="Buy, sell or trade tickets / shows and show memorabilia Via our Pier to Pier marketplace trading"
       />
       <FeatureRow
         order
-        img="/feature-img.png"
+        img="/feature-img2.png"
         title="A FULLY IMMERSIVE FUTURE"
         desc="As technology continues to advance, there will be an increasing demand for novel experiences. In response to this trend, Metflix is embracing the challenge by premiering content within the metaverse, a virtual reality space where users can interact and engage with various forms of entertainment. This includes world premieres from artists in various genres, such as music, comedy, and dance, among others. The utilisation of the metaverse as a platform for premiering content allows for a unique and immersive experience for the audience, catering to the growing need for new and exciting forms of entertainment."
       />
